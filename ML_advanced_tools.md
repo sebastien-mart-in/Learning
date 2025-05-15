@@ -1,6 +1,8 @@
 # Outils Avancés pour le Machine Learning
 
-*A list made by ChatGPT on May 5th, 2025 that list usefull tools to learn as a ML engineer*
+Made **on May 15th, 2025**
+
+*A list made by ChatGPT that list usefull tools to learn as a ML engineer*
 
 ## Optimisation & Compilation
 
