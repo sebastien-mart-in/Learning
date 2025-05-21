@@ -1,4 +1,4 @@
-# Sur une machine debian vide (paramètre de base)
+# Sur une machine debian vide (paramètre de base) avec assez de mémoire pour les librairies
 
 # Installation gcsfuse
 echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt gcsfuse-bookworm main" | sudo tee /etc/apt/sources.list.d/gcsfuse.list
@@ -31,8 +31,11 @@ sudo apt update
 sudo apt install -y python3.11 python3.11-venv python3.11-dev
 
 # à faire dans la root 
+
 python3.11 -m venv venv
+
 source venv/bin/activate
+
 pip install --upgrade pip
 
 # u
@@ -40,7 +43,7 @@ pip install --upgrade pip
 cd mon_bucket/catk
 
 
-#u
+# u
 
 pip install -r install/requirements.txt
 
