@@ -1,0 +1,56 @@
+# Sur une machine debian vide (paramètre de base)
+
+# Installation gcsfuse
+echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt gcsfuse-bookworm main" | sudo tee /etc/apt/sources.list.d/gcsfuse.list
+
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /usr/share/keyrings/cloud.google.gpg
+
+sudo apt update
+
+sudo apt install gcsfuse
+
+# Mount le bucket 
+
+mkdir ~/mon_bucket
+
+gcsfuse NOM_DU_BUCKET ~/mon_bucket
+
+# install python etc
+
+sudo apt update && sudo apt install -y \
+  git wget curl ffmpeg \
+  build-essential cmake \
+  libgl1-mesa-glx libglib2.0-0 \
+  python3 python3-pip python3-venv
+
+sudo apt update && sudo apt install -y software-properties-common
+
+sudo add-apt-repository ppa:deadsnakes/ppa -y
+sudo apt update
+
+sudo apt install -y python3.11 python3.11-venv python3.11-dev
+
+# à faire dans la root 
+python3.11 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+
+####
+
+cd mon_bucket/catk
+
+
+####
+
+pip install -r install/requirements.txt
+
+pip install torch==2.4.1 torchvision==0.19.1 --index-url https://download.pytorch.org/whl/cu121
+
+pip install torch_geometric
+
+pip install torch_scatter torch_cluster -f https://data.pyg.org/whl/torch-2.4.0+cu121.html
+
+pip install --no-deps waymo-open-dataset-tf-2-12-0==1.6.4
+
+
+
