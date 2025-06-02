@@ -1,4 +1,4 @@
-# Sur une machine debian vide (paramètre de base) avec assez de mémoire pour les librairies
+# Sur une machine debian vide (paramètre de base) avec assez de mémoire pour les librairies ou sur c0-deeplearning-common-cu124-v20250325-debian-11-py310-conda
 
 # Installation gcsfuse
 echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt gcsfuse-bookworm main" | sudo tee /etc/apt/sources.list.d/gcsfuse.list
