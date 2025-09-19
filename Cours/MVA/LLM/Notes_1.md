@@ -76,7 +76,18 @@ Comment est défini le contexte ? est il fixe ? pourquoi ?
 
 ### Batching 
 
+On va désormais mettre en batch nos modèles. 
 
+Quel est la signature (inputs, outputs, fonction) d'un modèle non batché ? d'un modèle batché ? 
+
+Que signifie 'batch-first' ? et 'input-first' ? 
+
+### Shortcut connections (ou residual, skip)
+
+Qu'est ce qu'une shortcut connections ? à quoi sert elle ? dans quel cas est elle utile ? Comment l'implémente t on ?
+à quoi ressemble un deep NN avec et sans elles ? 
+
+à voir : comment est ce fait en détails ? y a t il tout de même des poids ? 
 
 
 
