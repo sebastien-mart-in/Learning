@@ -56,13 +56,28 @@ Un mecanisme particulier d'attention est utilisé pour l'entrainement d'un modè
 Quel est le fonctionnement d'un modèle BERT ? d'un modèle GPT ? 
 
 
-à faire : Se renseigner sur le fonctionnement exact d'un modèle BERT 
+à faire : Se renseigner sur le fonctionnement exact d'un modèle BERT
+          Regarder comment est ce que l'encoder envoir ses informations au decoder en pratique
 
 ### Autoregressive models 
 
 à quoi ressemble la génération d'un phrase entière par un modèle autoregressif ?
 
-### Sliding windows ? 
+### Sliding windows 
+
+Qu'est ce que la sliding windows ? 
+
+Quelle est la nature d'un transformer ? composition, inputs , outputs ? 
+
+Quelles sont les 2 intérets de la sliding window ? Comment est ce coder en pratique pour run efficacement ? 
+Comment est défini le contexte ? est il fixe ? pourquoi ? 
+
+à faire : regarder les méthodes employées pour faire en sorte que les modèles n'oublie pas les éléments générés qui ne sont plus dans le contexte
+
+### Batching 
+
+
+
 
 
 ## Statistiques à connaître
