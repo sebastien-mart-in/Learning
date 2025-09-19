@@ -1,3 +1,11 @@
+https://llm.labri.fr/
+
+# Questionnaire suivant le cours 1 de LLM 
+
+## Parties
+
+### LLM
+
 qu'est ce qu'un LM ? (input output)
 MC, n-grams
 
@@ -39,12 +47,12 @@ Quelle est la complexité d'une tête d'attention ? Mémoire de chaque élément
 
 Quels sont l'avantage majeur et le défaut majeur d'une tête en temps que telle ?
 
-###
 
 
 
 
 
+## Statistiques à connaître
 
 Stats : taille du plus petit des gpt 2 ? (parameters, n_tokens  et embedding dimensions)
 pareil pour le plus large des gpt3 ? Les suivants ?
