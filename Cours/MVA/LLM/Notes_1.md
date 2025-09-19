@@ -73,6 +73,7 @@ Quelles sont les 2 intérets de la sliding window ? Comment est ce coder en prat
 Comment est défini le contexte ? est il fixe ? pourquoi ? 
 
 à faire : regarder les méthodes employées pour faire en sorte que les modèles n'oublie pas les éléments générés qui ne sont plus dans le contexte
+          le coder
 
 ### Batching 
 
@@ -89,6 +90,58 @@ Qu'est ce qu'une shortcut connections ? à quoi sert elle ? dans quel cas est el
 
 à voir : comment est ce fait en détails ? y a t il tout de même des poids ? 
 
+### Dropout
+
+Qu'est ce que le dropout ? Qu'est ce que cela permet ? Comment le réalise t on ? 
+Qu'est ce que la co-adaptations ? Pourquoi la réduire est positif (2) ? 
+Pourquoi le dropout permet il un effet ensembliste ? 
+
+Comment faire du dropout avec pytorch ? 
+
+Faut il dropout sur l'inférence ? comment enlever le dropout en inférence avec pytorch ? 
+
+à faire : voir ce que devienne les biais 
+          coder une couche dropout
+
+
+### Layer Normalization 
+
+Qu'est ce que c'est ? Pourquoi le fait on ? que sont les entrées et les sorties d'un tel processus ? à quoi ressemblent elles ? 
+
+à faire : coder en pratique un layer norm 
+
+### Positional embeddings
+
+Qu'est ce que le positionnal embedding dans l'idée ? Que résout il ? Pourquoi avait on se problème dans l'architecture ? 
+
+Comment est ce que ça marche ? Pourquoi est ce que faire ici permet de bien répartir de l'information de position dans les embeddings ? 
+
+Quelle est la version la plus simple du positional embedding ? 
+Comment la lie t on a l'embedding ? donne en une implémentation 
+
+
+Quelle est la version originelle du positional embedding ? donne les formules 
+Comment la lie t on ? donne une implémentation 
+Explique l'argument de linéarité qui permet de justifier que l'embedding va permettre de travailler sur des positions relatives 
+
+Que signifie RoPE ? qu'est ce que c'est ? 
+Quelle est la différence entre RoPE et un positional embedding plus classique ? 
+Quel est l'idée pour réaliser cela ? Quelle est la formule ? 
+à faire : regarder en détails ce qu'est RoPE et le réimplémenter, comprendre ce que veut dire de mettre les informations dans l'attention plutôt que dans les embeddings
+
+
+### Transformer Architecture
+
+Donne les 8 composants d'un bloc transformer ? Que faut il faire pour faire en sorte que l'on puisse enchainer les transformers ? Quel est alors le lien entre entrée et sortie ? 
+Fais un dessin d'une architecture transformer ?
+Qu'est ce qu'une activation GeLU ? quelle est son interet par rapport à une autre activation ?
+à faire : vérifier que dim output = dim input est bien uniquement pour enchainer les transformers de même forme
+          faire toute une section sur les fonctions d'activation en LLM 
+
+Fais le schéma de l'architecture d'un modèle GPT où le transformer serait répéter n fois. Quelles sont les inputs et les outputs ? Comment récupère t on le mot prédit ? 
+
+
+
 
 
 ## Statistiques à connaître
@@ -96,3 +149,4 @@ Qu'est ce qu'une shortcut connections ? à quoi sert elle ? dans quel cas est el
 Stats : taille du plus petit des gpt 2 ? (parameters, n_tokens  et embedding dimensions)
 pareil pour le plus large des gpt3 ? Les suivants ?
 pareil pour d'autres modèles LLM ? Nom, taille, embedding, particularités ?
+Des activations utilisées en LLM 
