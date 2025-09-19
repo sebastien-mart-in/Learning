@@ -140,9 +140,29 @@ Qu'est ce qu'une activation GeLU ? quelle est son interet par rapport à une aut
 
 Fais le schéma de l'architecture d'un modèle GPT où le transformer serait répéter n fois. Quelles sont les inputs et les outputs ? Comment récupère t on le mot prédit ? 
 
+Code entièrement un modèle. Il doit prendre en entrée soit juste X (inférence) et renvoyer les logits, soit X et Y (training) et renvoyer les logits et la loss.
 
+### Pretraining
 
+Créer une fonction get batch qui prend en entrée un str 'train' ou 'val' et qui renvoie un batch correspondant. 
 
+Créer un fonction de loss qui prend en entrée le model et un nombre d'itérations n_it et qui évalue le modèle sur le training et sur le validation dataset n_it fois. Puis qui renvoie la loss moyenne de chacun. 
+Que met on en décorateur de la fonction ? 
+
+Créer maintenant une fonction qui entraîne le model n_iterations fois. 
+On doit créer l'optimizer dedans. Quel optimizer utiliser ? 
+On veut également afficher la loss tous les eval_interval fois, et à la fin, avec 4 digits. 
+
+à faire : se renseigner sur les optimizers intéressants en LLM
+          regarder à quoi sert le set_to_none dans le zero_grad
+
+Qu'est ce que la cross entropie ? Sur quoi l'estime t on ? Donne la formule 
+Recode la et compare avec torch.nn.f
+
+Pourquoi la cross entropie est intéressante d'un point de vue likelihood ? 
+En quoi est-ce mieux qu'une simple prédiction de label correct ?
+Montre que c'est smooth et differentiable 
+Qu'est ce que la saturation du gradient ? explique la et explique pourquoi on réduit ce problème ici avec softmax + cross-entropy
 
 ## Statistiques à connaître
 
