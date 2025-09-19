@@ -45,11 +45,24 @@ A quoi doit on faire attention avec cette normalisation ? Comment règle t on le
 
 Quelle est la complexité d'une tête d'attention ? Mémoire de chaque élément et temps ?
 
-Quels sont l'avantage majeur et le défaut majeur d'une tête en temps que telle ?
+Quels sont l'avantage majeur et le défaut majeur d'une tête en temps que telle ? Quel est son nombre de paramètres ? 
+
+### Encoder / Decoder 
+
+Explique comment fonctionne une architecture de traduction de texte autoregressive 
+
+Un mecanisme particulier d'attention est utilisé pour l'entrainement d'un modèle autoregressif, lequel ? Comment l'implémente t on ? Implem torch ?
+
+Quel est le fonctionnement d'un modèle BERT ? d'un modèle GPT ? 
 
 
+à faire : Se renseigner sur le fonctionnement exact d'un modèle BERT 
 
+### Autoregressive models 
 
+à quoi ressemble la génération d'un phrase entière par un modèle autoregressif ?
+
+### Sliding windows ? 
 
 
 ## Statistiques à connaître
