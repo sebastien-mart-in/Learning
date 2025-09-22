@@ -21,8 +21,48 @@ Load un tokenizer (par exemple 'bert-base-uncased' de transformers.AutoTokenizer
 
 ### Pre-tokenization
 
+Qu'est ce que la pré-tokenisation ? En utilisant le pretokenizer du tokenizer précédent, pre-tokenize une phrase donnée. 
+
+Donne le pré tokenizer de SentencePiece, qui l'a développé ? 
+
+Quelles sont les 2 étapes global pour se servir du tokenizer ? 
+
+
 
 ### Byte-Pair Encoding (BPE)
 
+Qui a développé BPE et pour quel algo ? 
+Comment fonctionne t il ? 
+
+Comment fonctionne le pré-tokeniser ? Load le pré tokenizer déjà entrainé et pre tokenize une phrase donnée 
+
+Comment fonctionne ce tokenizer ? Recode le from scratch sur des phrases simples (où des caractères se répètent) et lance le sur un nouveau texte
+Quelle règle doit on ajouter pour les fins de phrase ? 
+
+Comment fait on en pratique pour gérer les caractères encore jamais vu qui pourrait appaître dans les textes à encoder ? 
+
+à voir : vérifier l'implémentation de tiktoken
+
+Qui a développé BPE et pour quel algo ? 
+Comment fonctionne t il ? 
+
+Comment fonctionne le pré-tokeniser ? Load le pré tokenizer déjà entrainé et pre tokenize une phrase donnée 
+
+Comment fonctionne ce tokenizer ? Recode le from scratch sur des phrases simples (où des caractères se répètent) et lance le sur un nouveau texte
+Quelle règle doit on ajouter pour les fins de phrase ? 
+
+Comment fait on en pratique pour gérer les caractères encore jamais vu qui pourrait appaître dans les textes à encoder ? 
+
+à voir : vérifier l'implémentation de tiktoken
+
 
 ### WordPiece
+
+
+Qui a développé wordpiece et pour quel algo ? 
+Comment fonctionne t il ? 
+
+Comment fonctionne le pré-tokeniser ? Load le pré tokenizer déjà entrainé et pre tokenize une phrase donnée 
+
+Comment fonctionne ce tokenizer ? Quelle est la formule employée ? Recode le from scratch sur des phrases simples (où des caractères se répètent) et lance le sur un nouveau texte
+Quelle token spéciaux a t on ?
