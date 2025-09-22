@@ -66,3 +66,8 @@ Comment fonctionne le pré-tokeniser ? Load le pré tokenizer déjà entrainé e
 
 Comment fonctionne ce tokenizer ? Quelle est la formule employée ? Recode le from scratch sur des phrases simples (où des caractères se répètent) et lance le sur un nouveau texte
 Quelle token spéciaux a t on ?
+
+
+## Stat
+
+Voir la taille moyen d'un vocabulaire de tokenisation, voir différents algo de tokenisatione et pré tokenisation
