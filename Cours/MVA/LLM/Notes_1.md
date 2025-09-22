@@ -1,8 +1,10 @@
 https://llm.labri.fr/
 
-# Questionnaire suivant le cours 1 de LLM 
 
-## Parties
+
+# Questionnaire suivant le cours 1 de LLM et le notebook 1
+
+## Cours
 
 ### LLM
 
@@ -164,7 +166,20 @@ En quoi est-ce mieux qu'une simple prédiction de label correct ?
 Montre que c'est smooth et differentiable 
 Qu'est ce que la saturation du gradient ? explique la et explique pourquoi on réduit ce problème ici avec softmax + cross-entropy
 
-## Statistiques à connaître
+
+## Notebook 
+
+Import torch, torch et torch nn functional définir batch size et n_token
+
+
+
+
+
+
+
+## Plus
+
+### Stats à connaitre
 
 Stats : taille du plus petit des gpt 2 ? (parameters, n_tokens  et embedding dimensions)
 pareil pour le plus large des gpt3 ? Les suivants ?
